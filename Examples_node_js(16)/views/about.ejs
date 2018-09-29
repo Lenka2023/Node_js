@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+<body style="background: yellow; color: darkblue; font-size: 46px;">
+<%include blocks/header.ejs %>
+
+<ol>
+    <li>text</li>
+    <li value="3">text
+                      <ul type="circle">
+                          <li>text</li>
+                          <li type="square">text</li>
+                                                     <ol type="a">
+                                                         <li>text</li>
+                                                         <li value="3">text</li>
+                                                     </ol>
+                          <li type="disc">text</li>
+                      </ul>
+       </li>
+     <li value="8">text</li>
+</ol>
+<img src="Koala.jpg">
+
+
+<dl>
+    <dt>ABOUT</dt>
+    <dd>ABOUT</dd>
+    <dd>ABOUT</dd>
+    <dd>ABOUT</dd>
+    <dt>ABOUT</dt>
+    <dd>ABOUT</dd>
+    <dd>ABOUT</dd>
+    <dd>ABOUT</dd>
+    <dd>ABOUT</dd>
+</dl>
+      <form method="post" action="/about">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" name="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" name="pass" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" name="check" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+</body>
+</html>
